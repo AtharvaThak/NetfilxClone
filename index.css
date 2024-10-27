@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+
+    background-color: black;
+}
+
+.main{
+    height: 100vh;
+    background-image: url("Images/BackgroundImage.jpeg");
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    height: 120px;
+}
+
+.content{
+    margin-left: 120px;
+    margin-right: 120px;
+    width: 880;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+    z-index: 1;
+}
+
+.content *{
+    position: relative;
+    z-index: 2;
+}
+
+.logo{
+    margin-left: 16px;
+}
+
+.language-btn{
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language-text{
+    color: white;
+    padding: 6px;
+}
+
+.sign-in{
+    background-color: red;
+    color: white;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.main-content{
+    color: white;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.user-email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-input{
+    width: 400px;
+    height: 56px;
+    background-color: rgba(18, 17, 17, 0.8);
+    padding-left: 16px;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.get-started{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 56px;
+    background-color: red;
+    margin-left: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*More*/
+
+.more{
+
+    margin-top: 32px;
+    background-color: black;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
